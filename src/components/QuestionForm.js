@@ -46,6 +46,7 @@ function QuestionForm({ onAddQuestion }) {
       .then((response) => response.json())
       .then((data) => {
         onAddQuestion(data); // Pass the newly added question to the parent
+
         // Reset the form
         setFormData({
           prompt: "",
